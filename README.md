@@ -1,6 +1,8 @@
 # Remote-keylogger-spyware
 A python code for a remote keylogger application that records all key strokes while application is running on remote device and sends all recorded keystrokes to a server.
 
+Usage of this knowledge should not be done for malicious purposes and the author is not responsible if this knowledge is used to conduct malicious activities.
+
 # remote-keylogger.py file
 > edit server-ip according to your server ip
 
